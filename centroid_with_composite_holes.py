@@ -1,8 +1,7 @@
 import streamlit as st
 import matplotlib
-     matplotlib.use('Agg')  # Use 'Agg' backend for Streamlit
-     import matplotlib.pyplot as plt
-     
+matplotlib.use('Agg')  # Use 'Agg' backend for Streamlit
+import matplotlib.pyplot as plt    
 import numpy as np
 
 st.title("Centroid Calculator")
@@ -166,4 +165,5 @@ if st.button("Calculate Composite Centroid"):
         ax.grid(True)
         ax.legend()
         st.pyplot(fig)
+
 
